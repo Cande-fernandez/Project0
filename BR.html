@@ -1,0 +1,104 @@
+
+<head>
+    <title>Advanced search</title>
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    
+    <style>
+        flex-wrap
+        h2{
+            margin-left: 15px ;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 23px;
+            color: rgb(160, 46, 46);
+            font-style: normal;
+        }
+        #title {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            margin-left: 18px;
+        }
+        .field{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            margin-left: 20px;
+            
+        }
+        .button {
+            background-color: rgb(66, 128, 243);
+            width: 150px;
+            height: 30px;
+            color: white;
+        }
+        .textinput {
+            border-style: ridge;
+            width: 300px;
+            height: 30px;
+        }
+
+        #button1{
+             position:absolute; top:0; right:5px;
+             width:300px; text-align: right;
+         }
+         a:link{
+            
+            text-decoration: none;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <div id="button1">
+        <a href="index.html" > Google </a> <br>
+        
+    </div>
+    <h1><span style="color: cornflowerblue">G</span><span style="color:rgb(221, 55, 55)">o</span><span style="color:rgb(241, 187, 10)">o</span><span style="color:cornflowerblue">g</span><span style="color:mediumseagreen">l</span><span style="color:firebrick">e</span></h1>
+    
+    <h2>Advanced search</h2>
+    <br>
+    <div id="title">
+        Find pages with…
+    </div>
+    <form action="https://google.com/search" name="f">
+    <br>
+    <div class="field">
+        <label for="field1">All these words:</label>
+        <br>
+        <input type="text" class="textinput" id="field0" value=""  name="as_q">
+    </div>
+    <br>
+    <div class="field">
+        <label for="field2">This exact word or phrase: </label>
+        <br>
+        <input type="text" class="textinput" id="field1" value=""  name="as_epq">
+    </div>
+    <br>
+    <div class="field">
+        <label for="field3">Any of this words: </label>
+        <br>
+        <input type="text" class="textinput" id="field2" value=""  name="as_oq">
+    </div>
+    <br>
+    <div class="field">
+        <label for="field4">None of these words: </label>
+        <br>
+        <input type="text" class="textinput" id="field3" value=""  name="as_eq">
+    </div>
+    <br>
+    <div class="field">
+        <label for="field5">Numbers ranging from: </label>
+        <br>
+        <input type="text" class="textinput" id="field4" value=""  name="as_nlo">
+        <span class="seperator">to</span>
+        <input type="text" class="textinput"  value=""  name="as_nhi">
+    </div>
+    <br>
+    
+        <input type="submit" value="Advanced search" class="button">
+    
+    </form>
+
+</body>
